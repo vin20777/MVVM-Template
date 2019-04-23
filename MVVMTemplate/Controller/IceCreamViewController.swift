@@ -20,6 +20,19 @@ class IceCreamViewController: BaseViewController {
         setupTableView()
     }
     
+//    // Look at demo project in mvc_to_mvvm_demo
+//    fileprivate func fetchData() {
+//        Service.shared.fetchXXXX { (XXXX, err) in
+//            guard let err == nil else {
+//                print("Fail to fetch XXXX: ", err)
+//                return
+//            }
+//            XXXX.map({ return XXXXViewModel(XXXX: $0)})
+//            self.XXXX = XXXX ?? []
+//            self.tableView.reloadData()
+//        }
+//    }
+    
     private func setupTableView() {
         tableView.delegate = self
         tableView.dataSource = self
